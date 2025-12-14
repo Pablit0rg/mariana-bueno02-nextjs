@@ -1,0 +1,66 @@
+📁 mariana-bueno-nextjs/  (Raiz do Projeto)
+│
+├── 📁 .github/              (Opcional: para automações futuras)
+│   └── 📁 workflows/
+│
+├── 📁 public/               (Arquivos estáticos acessíveis publicamente)
+│   ├── 📁 images/           (Fotos da advogada, escritório)
+│   ├── 📁 icons/            (Ícones das áreas de atuação)
+│   ├── 📄 favicon.ico       (Ícone da aba do navegador)
+│   └── 📄 robots.txt        (Para SEO)
+│
+├── 📁 src/                  (O CORAÇÃO DO CÓDIGO)
+│   │
+│   ├── 📁 actions/          (Backend Moderno: Server Actions para formulários/dados)
+│   │   └── 📄 contact-action.ts (Lógica de envio do formulário de contato)
+│   │
+│   ├── 📁 app/              (App Router - Onde ficam as rotas/páginas)
+│   │   ├── 📄 layout.tsx    (O "esqueleto" mestre do site: HTML, Navbar, Footer)
+│   │   ├── 📄 page.tsx      (A Página Inicial - Home)
+│   │   ├── 📄 globals.css   (Estilos globais do Tailwind e resets)
+│   │   ├── 📄 not-found.tsx (Página 404 personalizada)
+│   │   │
+│   │   ├── 📁 (institucional)/ (Grupo de rotas para organizar, não afeta a URL)
+│   │   │   ├── 📁 sobre/
+│   │   │   │   └── 📄 page.tsx (Página "Quem Somos")
+│   │   │   ├── 📁 areas-de-atuacao/
+│   │   │   │   └── 📄 page.tsx (Página de Serviços)
+│   │   │   └── 📁 contato/
+│   │   │       └── 📄 page.tsx (Página de Contato)
+│   │   │
+│   │   └── 📁 api/          (Rotas de API tradicionais, se precisarmos de integrações externas)
+│   │       └── 📄 route.ts  (Exemplo)
+│   │
+│   ├── 📁 components/       (Componentes React Reutilizáveis)
+│   │   │
+│   │   ├── 📁 ui/           (Componentes básicos de interface - botões, inputs, cards)
+│   │   │   ├── 📄 button.tsx
+│   │   │   ├── 📄 input.tsx
+│   │   │   ├── 📄 card.tsx
+│   │   │   └── 📄 section-heading.tsx (Títulos padronizados das seções)
+│   │   │
+│   │   ├── 📁 layout/       (Componentes estruturais fixos)
+│   │   │   ├── 📄 header.tsx    (Barra de navegação superior)
+│   │   │   ├── 📄 footer.tsx    (Rodapé)
+│   │   │   └── 📄 mobile-nav.tsx (Menu para celular)
+│   │   │
+│   │   └── 📁 sections/     (Grandes blocos da página inicial)
+│   │       ├── 📄 hero-section.tsx    (A área principal com a foto e chamada)
+│   │       ├── 📄 services-section.tsx (A área com os cards das áreas de atuação)
+│   │       └── 📄 cta-section.tsx      (Chamada para agendar consulta)
+│   │
+│   ├── 📁 lib/              (Utilitários e Configurações Auxiliares)
+│   │   ├── 📄 utils.ts      (Função crucial para juntar classes do Tailwind dinamicamente)
+│   │   └── 📄 constants.ts  (Dados estáticos: textos do menu, links sociais, telefone)
+│   │
+│   └── 📁 types/            (Definições de Tipos TypeScript)
+│       └── 📄 index.d.ts    (Tipos globais para garantir que o código não quebre)
+│
+├── 📄 .eslintrc.json        (Regras de qualidade de código)
+├── 📄 .gitignore            (O que não deve subir pro GitHub)
+├── 📄 .prettierrc           (Regras de formatação automática do código)
+├── 📄 next.config.js        (Configurações internas do Next.js)
+├── 📄 package.json          (Lista de dependências do projeto)
+├── 📄 postcss.config.js     (Processador do Tailwind)
+├── 📄 tailwind.config.ts    (O CÉREBRO DO DESIGN: cores, fontes e temas personalizados)
+└── 📄 tsconfig.json         (Configurações do TypeScript)
