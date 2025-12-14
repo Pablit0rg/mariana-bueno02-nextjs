@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aqui aplicamos o tema base do site usando 
+  as cores que definimos no tailwind.config.ts 
+*/
+@layer base {
+  html {
+    /* Rolagem suave quando clicar em links âncora */
+    scroll-behavior: smooth;
+  }
+
+  body {
+    /* Fundo "Dark" e texto "Off-white" padrão */
+    @apply bg-background text-foreground;
+    /* Garante que a fonte fique nítida */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Se quiser adicionar estilos globais personalizados no futuro, 
+  eles entram aqui. Por enquanto, deixamos limpo.
+*/

@@ -1,0 +1,42 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  // IMPORTANTE: Garante que o Tailwind procure classes dentro da nossa pasta "src"
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // --- A PALETA DE LUXO DA DRA. MARIANA ---
+
+        // DOURADO (Gold): Para acentos, botões e títulos de destaque
+        gold: {
+          DEFAULT: "#D4AF37", // Um dourado metálico clássico e rico
+          light: "#F2D272",   // Um tom mais claro para efeitos de "brilho" (hover)
+          dark: "#997B2F",    // Um tom mais fechado para texturas ou sombras
+        },
+
+        // DARK (Escuro): Para o fundo e seções contrastantes
+        dark: {
+          DEFAULT: "#0F1115", // Um "quase preto" profundo, mais sofisticado que o #000000
+          lighter: "#1A1D24", // Cinza chumbo para cartões ou fundos secundários
+          accent: "#2A2E38",  // Para bordas sutis ou divisórias
+        },
+
+        // Cores utilitárias para facilitar o dia a dia
+        background: "#0F1115", // Define o fundo padrão do site
+        foreground: "#F5F5F5", // Cor do texto padrão (um branco suave, "off-white")
+      },
+      fontFamily: {
+        // Vamos importar as fontes reais no próximo passo, aqui só definimos os "apelidos"
+        serif: ["var(--font-serif)", "serif"], // Para títulos elegantes (Ex: Cinzel ou Playfair)
+        sans: ["var(--font-sans)", "sans-serif"], // Para texto corrido moderno (Ex: Montserrat ou Inter)
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
