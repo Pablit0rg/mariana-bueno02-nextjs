@@ -10,4 +10,18 @@ export default function Home() {
       <ServicesSection />
     </>
   );
+  import { HeroSection } from "@/components/sections/hero";
+import { ServicesSection } from "@/components/sections/services";
+// Importe a nova seção
+import { AboutSection } from "@/components/sections/about";
+
+export default function Home() {
+  return (
+    <>
+      <HeroSection />
+      <ServicesSection />
+      {/* Adicione ela aqui */}
+      <AboutSection />
+    </>
+  );
 }
